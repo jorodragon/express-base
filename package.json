@@ -1,0 +1,44 @@
+{
+  "name": "express-base",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env DEBUG=express-sequelize node ./bin/www",
+    "wstart": "set DEBUG=express-base:*,app:* & nodemon ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "devdebug": "DEBUG=express-base:* nodemon ./bin/www",
+    "devlog": "DEBUG=express-base:*,app:* nodemon ./bin/www",
+    "devlogpm2": "DEBUG=express-base:*,app:* pm2 start ecosystem.config.js --env development",
+    "production": "pm2 start ecosystem.config.js --env production"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "2.6.9",
+    "express": "^4.17.1",
+    "module-alias": "^2.2.2",
+    "morgan": "^1.7.0",
+    "mysql2": "^2.1.0",
+    "pg": "^6.1.0",
+    "pug": "^2.0.0-rc.4",
+    "sequelize": "5.21.4",
+    "serve-favicon": "^2.5.0",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "cross-env": "^3.1.3",
+    "expect.js": "^0.3.1",
+    "mocha": "^3.0.2",
+    "supertest": "^2.0.0"
+  },
+  "_moduleAliases": {
+    "@src": "./src",
+    "@controllers": "./src/controllers",
+    "@models": "./src/models",
+    "@utils": "./src/utils",
+    "@commons": "./src/common",
+    "@config": "./src/config",
+    "@routes": "./src/routes"
+  }
+}
