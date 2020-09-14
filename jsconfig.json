@@ -8,7 +8,9 @@
         "@utils/*": ["./src/utils/*"],
         "@commons/*": ["./src/common/*"],
         "@config/*": ["./src/config/*"],
-        "@routes/*": ["./src/routes/*"]
+        "@routes/*": ["./src/routes/*"],
+        "@routes/*": ["./src/routes/*"],
+        "@middlewares/*": ["./src/middlewares/*"]
       }
     }
   }
