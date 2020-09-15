@@ -11,8 +11,8 @@ const env = {
 const sequelize = new Sequelize(env.database, env.user, env.password, {
   host: env.host,
   dialect: "mysql",
-  logging: debug.db,
-  // logging: false,
+  // logging: debug.db,
+  logging: false,
   query: { raw: false },
   timezone: "+07:00",
   dialectOptions: {

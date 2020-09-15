@@ -1,7 +1,6 @@
 'use strict';
 const _ = require('lodash');
-const { config } = require('@utils/constant');
-const { debug } = require('@utils/constant');
+const { config, debug } = require('@utils/constant');
 function wrapErrorJSON(error, message = null, ex = '') {
   return {
     status: 0,
