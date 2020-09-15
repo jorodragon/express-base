@@ -1,5 +1,5 @@
 require('module-alias/register');
-var models = require('@src/middlewares/node_modules/@models');
+var models = require('@models');
 
 models.sequelize
   // thêm mới mà k xóa
